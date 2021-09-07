@@ -120,14 +120,15 @@ iframe {
 }
 
 .full-width-box {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 2%;
   display: inline-block;
   float: left;
 }
 
 img {
-  height: 400px;
+  /* height: 400px; */
+  width: 400px;
   display: inline-block;
   float: left;
   margin-bottom: 2%;
