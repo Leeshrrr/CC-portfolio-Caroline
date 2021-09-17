@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
@@ -36,9 +35,120 @@
 
     <!-- main content -->
     <div class="content">
+        <!-- 1. give your project  a titile -->
+
+        <h1>
+            Project #3 Experimental Clock
+        </h1>
+
+
+        <!-- 2. embed your p5 sketch -->
+
+        <div class="fullwidth">
+            <!-- below width and height refers to the dimensions of your sketch-->
+            <iframe width="600px" height="600px" src="https://preview.p5js.org/Leeshrrr/embed/9AiyZAfLe"></iframe>
+        </div>
+
+        <!-- 3. write a short description to describe what the work is about -->
+        <h1>
+            Description
+        </h1>
+
+        <P class=extraweight>
+            Create your own portrait now!
+        </P>
+
         <p>
-            Coming soon
+            <span class=extraweight>press the mouse:</span> change the hair style
         </p>
+
+        <p>
+            <span class=e xtraweight>mouseX:</span> change the skin color and eye movement
+        </p>
+
+        <p>
+            <span class=e xtraweight>mouseY:</span> change the background color, eyemovement and eyebrow movement
+        </p>
+
+        <p>
+            <span class=e xtraweight>press any key:</span> save your portrait to <i>download</i>
+        </p>
+
+        <!-- 4. reflection -->
+        <h1>
+            Design Process
+        </h1>
+
+        <p class=e xtraweight>
+            <a href="https://editor.p5js.org/Leeshrrr/sketches/a_ZJSTwFH" target="_blank">Code sourse link here</a>
+        </p>
+
+        <!-- <p class = extraweight>
+            The functions I use include:
+        </p> -->
+
+        <p>
+            1. <span class=e xtraweight>Change skin color and background color:</span> build a function to make color changes between color 1 and 2 [colorScale(mouseX or mouseY, color1, color2)]. Method utilized: switch-case; constrain; map;
+        </p>
+
+        <p>
+            2. <span class=e xtraweight>Switch hair style randomly:</span> Method utilized: mousePressed; random; randomSeed; switch-case; loadImage;
+        </p>
+
+        <p>
+            3. <span class=e xtraweight>Move eyes and eyebrows: </span>build functions [drawEyes(Xposition, Yposition)]. Method utilized: 2D primitives; mouseX & mouseY;
+        </p>
+
+        <p>
+            4. <span class=e xtraweight>Save image:</span> Method utilized: keyPressed; DOM;
+        </p>
+
+        <div class="fullwidth">
+            <img src="images/assignment2-1.png" />
+        </div>
+
+        <div class="fullwidth">
+            <img src="images/assignment2-2.png" />
+        </div>
+
+        <div class="fullwidth">
+            <img src="images/assignment2-3.png" />
+        </div>
+
+        <!-- 4. reflection -->
+        <h1>
+            Reflection
+        </h1>
+
+        <p>
+            1. Have learned some functions and events
+        </p>
+
+        <p>
+            2. Want to have random results in function draw but don’t want to have it change randomly 60times/s: use randomSeed in draw() and random(randomSeed) in setup()
+        </p>
+
+        <p>
+            3. Use self-defined functions can reduce code redudancy.
+        </p>
+
+        <!-- 5. Credits -->
+        <h1>
+            Credits
+        </h1>
+
+        <p>
+            //
+        </p>
+
+        <!-- <p>
+            This project was created based on the <a
+                href="https://www.youtube.com/watch?v=hZB3UX1bh_Q&list=PLuLgmkp7OJgFhpFaQt4LGZBOoK_sjPbxj&index=6&t=0s">Sound
+                Interactive tutorial</a> by Ari Melenciano (@AriCiano) and it remixes <a
+                href="https://github.com/everestpipkin/never">never</a> by Everest Pipkin (@everestpipkin), licensed
+            under <a href="https://github.com/everestpipkin/never/blob/master/LICENSE">MIT License 2018</a>.
+        </p> -->
+
     </div>
 </body>
 
