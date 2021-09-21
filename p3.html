@@ -54,25 +54,24 @@
             Description
         </h1>
 
-        <P class=extraweight>
-            Do you want to use the <span class=extraweight>Time Turner</span>
+        <P>
+            Do you want to use the <span class=extraweight>Time Turner?</span>
         </P>
 
         <p>
-            <span class=extraweight>press the mouse:</span> change the hair style
+            The inspiration of this clock is the Time Turner in Harry Potter. There are 2 ways to control time and a way to reset the time.
         </p>
 
         <p>
-            <span class=e xtraweight>mouseX:</span> change the skin color and eye movement
+            If you press and drag the mouse, the “wand” will insert magic power to change the time( when the tip of the wand is outside the clock, the time will lapse forward (and the further , the faster). When it is inside the clock, the time will lapse backward
+            (also related to the distance).
         </p>
 
         <p>
-            <span class=e xtraweight>mouseY:</span> change the background color, eyemovement and eyebrow movement
+            And there is a faster way to go back your days. When your mouse moves to the spring of the clock( the small ring), the time will go back at a very high speed. When you’re going to let the time back to normal, you just need to click on the center of the
+            clock.
         </p>
 
-        <p>
-            <span class=e xtraweight>press any key:</span> save your portrait to <i>download</i>
-        </p>
 
         <!-- 4. reflection -->
         <h1>
@@ -80,7 +79,7 @@
         </h1>
 
         <p class=e xtraweight>
-            <a href="https://editor.p5js.org/Leeshrrr/sketches/a_ZJSTwFH" target="_blank">Code sourse link here</a>
+            <a href="https://editor.p5js.org/Leeshrrr/sketches/9AiyZAfLe" target="_blank">Code sourse link here</a>
         </p>
 
         <!-- <p class = extraweight>
@@ -88,31 +87,29 @@
         </p> -->
 
         <p>
-            1. <span class=e xtraweight>Change skin color and background color:</span> build a function to make color changes between color 1 and 2 [colorScale(mouseX or mouseY, color1, color2)]. Method utilized: switch-case; constrain; map;
+            Because the time will not pass by regularly, so I can only use second(), minute() and hour() in setup(), and then I add time by add the value of variable in every loop of draw(). there are many steps to convert the developing variable into seemingly “time”.
         </p>
-
-        <p>
-            2. <span class=e xtraweight>Switch hair style randomly:</span> Method utilized: mousePressed; random; randomSeed; switch-case; loadImage;
-        </p>
-
-        <p>
-            3. <span class=e xtraweight>Move eyes and eyebrows: </span>build functions [drawEyes(Xposition, Yposition)]. Method utilized: 2D primitives; mouseX & mouseY;
-        </p>
-
-        <p>
-            4. <span class=e xtraweight>Save image:</span> Method utilized: keyPressed; DOM;
-        </p>
-
         <div class="fullwidth">
-            <img src="images/assignment2-1.png" />
+            <img src="images/assignment3-1.png" />
+        </div>
+        <div class="fullwidth">
+            <img src="images/assignment3-2.png" />
         </div>
 
-        <div class="fullwidth">
-            <img src="images/assignment2-2.png" />
-        </div>
+        <p>
+            And it is not easy to show the text time. We only need to use second() etc before, but I need to use many methods to express it, because the time in the canvas is not the time now.
+        </p>
 
         <div class="fullwidth">
-            <img src="images/assignment2-3.png" />
+            <img src="images/assignment3-3.png" />
+        </div>
+
+        <p>
+            The magic beam is an oscillator in math.
+        </p>
+
+        <div class="fullwidth">
+            <img src="images/assignment3-4.png" />
         </div>
 
         <!-- 4. reflection -->
@@ -121,16 +118,10 @@
         </h1>
 
         <p>
-            1. Have learned some functions and events
+            The time that is subjective, personal, or even irrational organization can exists in our mind, but it is hard to express in code, because the change of our mood etc can not be shown by algorithm.
         </p>
 
-        <p>
-            2. Want to have random results in function draw but don’t want to have it change randomly 60times/s: use randomSeed in draw() and random(randomSeed) in setup()
-        </p>
 
-        <p>
-            3. Use self-defined functions can reduce code redudancy.
-        </p>
 
         <!-- 5. Credits -->
         <h1>
