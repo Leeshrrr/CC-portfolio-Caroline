@@ -48,8 +48,12 @@
             <iframe width="600px" height="520px" allow="camera" src="https://editor.p5js.org/Leeshrrr/full/zsQuHb4I1"></iframe>
 
             <p>
-                Hover your mouse on the spots to see the place name.
+                Make an expression facing the camera: open or close your mouth, or frown
             </p>
+            <p>
+                Press any key to save your selfie.
+            </p>
+
 
 
             <!-- 3. write a short description to describe what the work is about -->
@@ -58,8 +62,9 @@
             </h1>
 
             <P>
-                I choose my footprint from Oct 1 to Oct 7 as the data. The map will show my movement from place to place, connecting them by lines, and you can check the place I visit by hover the mouse on the white points. You can also zoom in and out the map or change
-                the position just like the way in Google Map.
+                Nowadays, many people like to add mosaics or stickers to their faces when posting their selfies, partly to protect their privacy and partly because they made a bad face but didn't want to give up the picture. But sometimes mosaics do not reflect the mood
+                of the shooting, so I created a selfie camera called “Mask” with emoji stickers, which can track your face for dynamic mosaics, and the appearance of the mask will change according to your expression. There are currently three stickers:
+                smile, laugh and angry.
             </P>
 
 
@@ -69,38 +74,24 @@
             </h1>
 
             <p class=extraweight>
-                <a href="https://editor.p5js.org/Leeshrrr/sketches/83V9vEA8u" target="_blank">Code sourse link here</a>
+                <a href="https://editor.p5js.org/Leeshrrr/sketches/zsQuHb4I1" target="_blank">Code sourse link here</a>
             </p>
 
 
 
             <p>
-                I use “timeline” in Google Map to track my way and download the JSON file. The data includes the position, the name of place, the duration etc. Then I use loadJSON to fetch the data and also put the position in to arrays.
-            </p>
+                I used the library called <span class="extraweight">Clmtrackr</span> to track facial features. </p>
             <div class="fullwidth">
-                <img src="images/assignment6-1.png" />
+                <img src="images/assignment8-1.png" />
             </div>
 
 
             <p>
-                Then I use Mappa.js to apply the map. I use leaflet as the source of map and use the function latLngToPixel to map the latitude and longitude data to points on the canvas.
+                I set the center point of the emoji at the nose point(62), used the distance between the lips(57& 60) to identify the laughing and smiling expressions, and used the distance between the performers and the eyebrows(17&29) to identify the angry expressions.
+                For the rotation of the expression, I used the Angle between the line connected by the eyes(27&32) and the horizontal line to identify it.
+
             </p>
 
-            <div class="fullwidth">
-                <img src="images/assignment6-2.png" />
-            </div>
-            <div class="fullwidth">
-                <img src="images/assignment6-4.png" />
-            </div>
-
-
-            <p>
-                And I use lerp() and millis() to make dynamic lines.
-            </p>
-
-            <div class="fullwidth">
-                <img src="images/assignment6-3.png" />
-            </div>
 
             <!-- 4. reflection -->
             <h1>
@@ -108,8 +99,9 @@
             </h1>
 
             <p>
-                Data visualization can restore physical data like the position or duration, but the subjective things like emotions and thoughts can not be shown in it. (Of course I can tell it by myself, but it can not be collected by apps etc.) So the things we can
-                do further is to add our feelings into it.
+                The camera actually didn't live up to my initial expectations. I originally wanted to use the principle of convolution layer to make a camera that could recognize edges, but the speed of operation was very slow due to too many pixels, high frame rate
+                and insufficient performance of the editor. In fact, any dynamic camera effects are impossible to achieve. (Maybe I didn't find the right way). So I chose Clmtrackr, a library that allows dynamic effects to flow smoothly. However, this
+                library has a limitation, that is, the accuracy of recognition is not particularly high, so the accuracy of expression is sometimes not very high too.
             </p>
 
 
@@ -120,7 +112,7 @@
             </h1>
 
             <p>
-                I use <a href="https://github.com/cvalenzuela/Mappa">Mappa.js</a> created by <a href="https://github.com/cvalenzuela">Cristóbal Valenzuela</a>.
+                I use <a href="https://github.com/auduno/clmtrackr">Clmtrackr</a> created by <a href="https://github.com/auduno">Audun Mathias Øygard</a>.
             </p>
 
             <!-- <p>
