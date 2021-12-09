@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
@@ -36,10 +35,119 @@
 
     <!-- main content -->
     <div class="content">
-        <p>
-            Coming soon
-        </p>
-    </div>
+        <h1>
+            Project #9 Sousveillance Tool
+        </h1>
+
+
+        <!-- 2. embed your p5 sketch -->
+
+        <div class="fullwidth">
+            <!-- below width and height refers to the dimensions of your sketch-->
+            <iframe width="600px" height="700px" src="https://editor.p5js.org/Leeshrrr/full/8NfDe69hx"></iframe>
+            <!-- <p>
+                Make an expression facing the camera: open or close your mouth, or frown
+            </p> -->
+            <p>
+                <span class="extraweight"> If it doesn't work well, would you like to move to the <a href="https://editor.p5js.org/Leeshrrr/sketches/8NfDe69hx"> editor version</a>?</span>
+            </p>
+
+
+
+
+            <!-- 3. write a short description to describe what the work is about -->
+            <h1>
+                Description
+            </h1>
+
+            <P>
+                This is an invisible map. There are only scales of latitude and longitude on the map. You can click on the map to create blue or green dots and explore whether there is covered by water or land. If you add enough dots on it, it can be a visible map! You
+                can adjust the dots’ size by dragging the slider, and also there is “show sample map” to help you compare the invisible map with the real map.
+            </P>
+            <P>
+
+
+
+                <!-- 4. reflection -->
+                <h1>
+                    Design Process
+                </h1>
+
+                <p class=extraweight>
+                    <a href="https://editor.p5js.org/Leeshrrr/sketches/8NfDe69hx" target="_blank">Code sourse link here</a>
+                </p>
+
+
+                <p>
+                    I spent a lot of time searching for interesting API, and it’s a hard thing. Some are expensive and too complicated to get a key. Some are free, but maybe boring, and not relative to the invisible writing. And I finally choose this one, that is to lets
+                    you programmatically determine whether a latitude, longitude coordinate is on water or land. But it is still not perfect — it is not free (but acceptable, $1 for 20000 calls), and has a limitation on the speed (10 calls per second).
+                    I originally wanted to make a brush that can draw smoothly on the invisible map, but it will call too many times per second, and there are also delays from I call it to it responses, so I finally decided to make dots, calling once
+                    per click. This is the <a href="https://onwater.io/">API link</a> and the usage.
+                </p>
+                <div class="fullwidth">
+                    <img src="images/assignment9-1.png" />
+                </div>
+
+
+                <p>
+                    I used some other elements outside of the canvas, like the slider, button and paragraph to change the parameter and show datas.
+                </p>
+                <div class="fullwidth">
+                    <img src="images/assignment9-2.png" />
+                </div>
+
+
+                <p>
+                    Every time you click your mouse, the position of your mouse will be recorded and turned to a corresponding latitude and longitude. Then the number will be sent to cal the API. Then the data will be returned and shown on both the map and in words. Also
+                    there is a sample map. If you cannot draw a clear image of the invisible map in your mind, you can show the sample map to make it clear.
+                </p>
+                <div class="fullwidth">
+                    <img src="images/assignment9-3.png" />
+                </div>
+                <div class="fullwidth">
+                    <img src="images/assignment9-4.png" />
+                </div>
+
+                <p>
+                    And there are also some problems on making the sample map and invisible map corresponding. Because the distribution of scale is uniform on the invisible map, but there are hardly any maps being like that. So I chose a map that almost have a uniform scale
+                    and used PS to adjust it. But there are still might errors between 2 maps. </p>
+                <div class="fullwidth">
+                    <img src="images/assignment9-5.png" />
+                </div>
+
+
+
+                <!-- 4. reflection -->
+                <h1>
+                    Reflection
+                </h1>
+
+                <p>
+                    It is so hard to find an appropriate API. I tried to look for APIs that are more social-related and can better express the concept of the sousveillance tool, but I failed to do that. Actually most of the datas are “invisible”. They are private, not open
+                    to the public, so we can hardly get access to them and learn something from them. So is it a kind of invisible writing? No matter why we cannot access them, maybe for security reasons, or people want to get paid from collecting the
+                    data, or they want to hide something bad, there are indeed too much datas invisible, and that makes the world more obscure.
+                </p>
+
+
+
+                <!-- 5. Credits -->
+                <h1>
+                    Credits
+                </h1>
+
+                <p>
+                    <a href="https://onwater.io/">On Water API</a>
+                </p>
+
+                <!-- <p>
+        This project was created based on the <a
+            href="https://www.youtube.com/watch?v=hZB3UX1bh_Q&list=PLuLgmkp7OJgFhpFaQt4LGZBOoK_sjPbxj&index=6&t=0s">Sound
+            Interactive tutorial</a> by Ari Melenciano (@AriCiano) and it remixes <a
+            href="https://github.com/everestpipkin/never">never</a> by Everest Pipkin (@everestpipkin), licensed
+        under <a href="https://github.com/everestpipkin/never/blob/master/LICENSE">MIT License 2018</a>.
+    </p> -->
+
+        </div>
 </body>
 
 </html>
